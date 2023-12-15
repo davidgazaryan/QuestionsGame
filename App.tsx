@@ -10,7 +10,7 @@ import Reset from './components/Reset';
 
 // hello world
 
-function App() {
+function App(){
   const allQuestions = questions as Questions;
   const [currentQuestionIdx,setCurrentQuestionIdx] = useState(0);
   const [correctAnswers,setCorrectAnswers] = useState(0);
@@ -28,7 +28,7 @@ function App() {
     if (correct) {
         setCorrectAnswers(correctAnswers+1);
     }
-    else{
+    else {
         setIncorrectAnswers(incorrectAnswers+1);
     }
 
@@ -57,7 +57,7 @@ function App() {
         <QuestionComp question={allQuestions.questions[currentQuestionIdx]}
         onSubmit= {onSubmit}/>
 
-        {Advance && <button onClick={advance}>Next Question.. </button>}
+        {Advance && <button onClick={advance}> Next Question.. </button>}
     </div>
   );
 }
