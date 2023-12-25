@@ -8,7 +8,6 @@ import StatBar from './components/statbar';
 import QuestionComp from './components/question';
 import Reset from './components/Reset';
 
-// hello world
 
 function App(){
   const allQuestions = questions as Questions;
@@ -17,11 +16,9 @@ function App(){
   const[incorrectAnswers,setIncorrectAnswers] = useState(0);
   const [Advance,setAdvance] = useState(false);
 
-
   const advance = () =>{
     setAdvance(false);
     setCurrentQuestionIdx(currentQuestionIdx + 1);
-
   }
 
   const onSubmit = (correct:boolean) => {
