@@ -47,8 +47,6 @@ function App(){
 
 }
   return (
-
-
     <div className="App">
         <StatBar currentQuestion={currentQuestionIdx + 1} correct={correctAnswers} incorrect={incorrectAnswers}totalQuestions={allQuestions.questions.length}/>
         <QuestionComp question={allQuestions.questions[currentQuestionIdx]}
