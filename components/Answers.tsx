@@ -28,11 +28,10 @@ const Answers = (props:Props) => {
             let color = "";
             if (chosen && props.question.correct === idx) color = "green";
             else if (chosen) color = "red";
-//             WE TAKE ANSWER COMPONENTS PASS TO ANSWERS AND MAP, THEN TAKE ANSWERS AND PASS TO QUESTION COMPONENT
+
                 return (
                     <Answer
                         text = {correct}
-//                         Change THIS TO SEE WHAT HAPPENS
                         onPress={() => onPress(idx)}
                         color={color}
                         disabled={chosen}
